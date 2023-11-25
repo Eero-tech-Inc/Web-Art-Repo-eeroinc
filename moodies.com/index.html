@@ -12,7 +12,7 @@
     <meta name="description" content="This is a template of our website">
 
     <!--- meta tags -->
-    <link rel="shortcut icon" href="./assets/logos/logo.png" type="image/svg+xml">
+    <link rel="shortcut icon" href="assets/images/logos/logo-main-full.png" type="image/svg+xml">
 
     <!--- css links -->
     <link rel="stylesheet" href="css/style.css">
@@ -20,7 +20,7 @@
 </head>
 <body>
     <!--- web-page-1 -->
-    <section class="web-page-1" id="home">
+    <section class="web-page-1" aria-label="home" id="home">
     
         <!--- header-section -->
         <header class="header-container">
@@ -29,6 +29,7 @@
                     <img src=assets/images/logos/logo-main.png  width="100" height="20" alt="moodies-off-logo"></a>
             </div>
         
+            <!--- header-info -->
             <div class="header-info">
                 <h2><a href="#" class="mood-info">moodies</a> is the world's largest clothen brand invested 
                     <br>in the production of men and women casual wears.</h2>
@@ -36,7 +37,8 @@
                     <p class="header-ital">Lorem Ipsum is simply dummy text of the typesetting industry.</p>
                 
                 <button class="read-btn">Read More</button>
-                
+        
+                <!--- header-info-poopup -->
                 <div class="header-popup-body">
                     <div class="header-popup">
                         <div class="heading">
@@ -77,70 +79,76 @@
 
                             <img src="assets/images/bio3.jpg" class="bio-image" width="380px" height="350px">
 
-
+                        <h2 id="bio-writter">by Lorenn Renner - MD. BSc.</h2>
                     </div>
                 </div>
             </div>
 
+            <!--- header-icons -->
             <div class="header-buttons">
                 <img src="assets/images/logos/main-user.png" width="27px" height="27px" id="user-icon">
 
                 <img src="assets/images/logos/cart-icon-2.png" width="35px" height="35px" id="cart-icon">
             </div>
 
+            <!--- empty-space -->
             <div class="flex-breaker"></div>
         </header>
 
         <!--- hero-section -->
-        <div class="hero-page">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <h1 class="main-headline">Leaf on Leaf</h1>
-                    <h2>The fun never stops</h2>
-                    
-                    <p>Lorem Ipsum is simply dummy text.</p>
+        <ul class="hero-slider-container" data-hero-slider>
+            
+            <li class="hero-page active" data-hero-slider-item>
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1 class="main-headline">Leaf on Leaf</h1>
+                        <h2>The fun never stops</h2>
+                        
+                        <p>Lorem Ipsum is simply dummy text.</p>
 
-                    <h3 class="bottom-text">Originality is always our trademark</h3>
-
-                </div>
-            </div>
-
-            <!--- hero-ad-section -->
-            <div class="hero-slider-section">
-
-                <div class="hero-ad-container active">
-                    <img src="assets/images/main-hero-image.png" class="hero-pic" alt="t-shirts">
-
-                    <div class="hero-ad-content">
-                        <h1 class="hero-pic-text">Fun-V T-Shirt</h1>
-                            <div class="small-text">
-                                <a href="#" class="price-tag">$12</a> 
-                                
-                                <h2>Lorem Ipsum is <br>simply dummy text.</h2>
-                            </div>
-                        <button class="buy-btn">Buy Now</button>
+                        <h3 class="bottom-text">Originality is always our trademark</h3>
 
                     </div>
                 </div>
 
-            </div>
+                <!--- hero-ad-section -->
+                <div class="hero-slider-section">
+                    <div class="hero-ad-container-slider">
 
-            <!--- slider-icons -->
-            <div class="slider-icons" >
-                <a href="#"class="slider-logo">
-                <img src="assets/images/logos/slider-main1.png" width="20px" height="auto" class="slider-pointer">
-                <img src="assets/images/logos/slider-main2.png" width="20px" height="auto" class="slider-pointer">
-                <img src="assets/images/logos/slider-main3.png" width="20px" height="auto" class="slider-pointer">
-                <img src="assets/images/logos/slider-main4.png" width="20px" height="auto" class="slider-pointer">
-                </a>
-            </div>
+                        <div class="hero-ad-container">
+                            <img src="assets/images/main-hero-image.png" class="hero-pic" alt="t-shirts">
 
-        </div>
+                            <div class="hero-ad-content">
+                                <h1 class="hero-pic-text">Fun-V T-Shirt</h1>
+                                    <div class="small-text">
+                                        <a href="#" class="price-tag">$12</a> 
+                                        
+                                        <h2>Lorem Ipsum is <br>simply dummy text.</h2>
+                                    </div>
+                                <button class="buy-btn">Buy Now</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+            
+                </div>
+
+                <!--- slider-icons -->
+                <div class="slider-icons" >
+                    <a href="#"class="slider-logo">
+                    <img src="assets/images/logos/slider-main1.png" width="20px" height="auto" class="slider-pointer" data-prev-btn>
+                    <img src="assets/images/logos/slider-main2.png" width="20px" height="auto" class="slider-pointer" data-next-btn>
+                    </a>
+                </div>
+
+            </li>
+
+        </ul>
+
     </section>
 
 
-    <!--- main-starts -->
-    
     <!--- products-section -->
     <section class="main-product-container" id="products">
         <div class="products-content">
@@ -303,8 +311,8 @@
 
             </div>
 
-            <div class="product-box" id="small-size">
-                <img src="assets/images/T-Shirts-Box_.png" width="300px" height="100px" class="t-shirt-logo">
+            <div class="product-box updside" id="small-size">
+                <img src="assets/images/T-Shirts-Box1_.png" width="300px" height="100px" class="t-shirt-logo">
                 
                 <div class="box-content" id="content-align">
                     <h1 class="product-name">Fun-T-Hoodie</h1>
@@ -335,8 +343,8 @@
 
             </div>
 
-            <div class="product-box">
-                <img src="assets/images/T-Shirts-Box1_.png" width="350px" height="150px" class="t-shirt-logo">
+            <div class="product-box updside">
+                <img src="assets/images/T-Shirts-Box_.png" width="320px" height="120px" class="t-shirt-logo">
                 
                 <div class="box-content">
                     <h1 class="product-name">Fun-T-Hoodie</h1>
@@ -366,8 +374,8 @@
                 </div>
             </div>
 
-            <div class="product-box" id="small-size">
-                <img src="assets/images/T-Shirts-Box_.png" width="300px" height="100px" class="t-shirt-logo">
+            <div class="product-box updside" id="small-size">
+                <img src="assets/images/T-Shirts-Box1_.png" width="300px" height="100px" class="t-shirt-logo">
                 
                 <div class="box-content" id="content-align">
                     <h1 class="product-name">Fun-T-Hoodie</h1>
@@ -398,8 +406,8 @@
 
             </div>
 
-            <div class="product-box">
-                <img src="assets/images/T-Shirts-Box1_.png" width="350px" height="150px" class="t-shirt-logo">
+            <div class="product-box updside">
+                <img src="assets/images/T-Shirts-Box_.png" width="320px" height="120px" class="t-shirt-logo">
                 
                 <div class="box-content">
                     <h1 class="product-name">Fun-T-Hoodie</h1>
@@ -429,8 +437,8 @@
                 </div>
             </div>
 
-            <div class="product-box" id="small-size">
-                <img src="assets/images/T-Shirts-Box_.png" width="300px" height="100px" class="t-shirt-logo">
+            <div class="product-box updside" id="small-size">
+                <img src="assets/images/T-Shirts-Box1_.png" width="300px" height="100px" class="t-shirt-logo">
                 
                 <div class="box-content" id="content-align">
                     <h1 class="product-name">Fun-T-Hoodie</h1>
@@ -463,173 +471,48 @@
 
         </div>
     </section>
-    <!--- main-ends -->
 
 
-    
-    <!---<section class="main-product-container" id="products">
-        <div class="products-content">
-
-            <div class="product-box">
-                <img src="assets/images/T-Shirts-Box1_.png" width="300px" height="100px" class="t-shirt-logo">
-                
-                <div class="box-content">
-                    <h1 class="product-name">Fun-T-Hoodie</h1>
-                    <div class="box-text">
-                        <a href="#" class="product-price">$12</a>
-                        <h2 class="description">Lorem Ipsum is <br>simply dummy text</h2>
-                    </div>
-                    <button class="car-btn">Buy Now</button>
-                </div>
-
-            </div>
-
-            <div class="product-box">
-                <img src="assets/images/T-Shirts-Box1_.png" width="350px" height="150px" class="t-shirt-logo">
-                
-                <div class="box-content">
-                    <h1 class="product-name">Fun-T-Hoodie</h1>
-                    <div class="box-text">
-                        <a href="#" class="product-price">$12</a>
-                        <h2 class="description">Lorem Ipsum is <br>simply dummy text</h2>
-                    </div>
-                    <button class="car-btn">Buy Now</button>
-                </div>
-
-            </div>
-
-            <div class="product-box">
-                <img src="assets/images/T-Shirts-Box1_.png" width="300px" height="100px" class="t-shirt-logo">
-                
-                <div class="box-content">
-                    <h1 class="product-name">Fun-T-Hoodie</h1>
-                    <div class="box-text">
-                        <a href="#" class="product-price">$12</a>
-                        <h2 class="description">Lorem Ipsum is <br>simply dummy text</h2>
-                    </div>
-                    <button class="car-btn">Buy Now</button>
-                </div>
-
-            </div>
-
-            <div class="product-box">
-                <img src="assets/images/T-Shirts-Box1_.png" width="350px" height="150px" class="t-shirt-logo">
-                
-                <div class="box-content">
-                    <h1 class="product-name">Fun-T-Hoodie</h1>
-                    <div class="box-text">
-                        <a href="#" class="product-price">$12</a>
-                        <h2 class="description">Lorem Ipsum is <br>simply dummy text</h2>
-                    </div>
-                    <button class="car-btn">Buy Now</button>
-                </div>
-
-            </div>
-
-            <div class="product-box">
-                <img src="assets/images/T-Shirts-Box1_.png" width="300px" height="100px" class="t-shirt-logo">
-                
-                <div class="box-content">
-                    <h1 class="product-name">Fun-T-Hoodie</h1>
-                    <div class="box-text">
-                        <a href="#" class="product-price">$12</a>
-                        <h2 class="description">Lorem Ipsum is <br>simply dummy text</h2>
-                    </div>
-                    <button class="car-btn">Buy Now</button>
-                </div>
-
-            </div>
-
-            <div class="product-box">
-                <img src="assets/images/T-Shirts-Box1_.png" width="300px" height="100px" class="t-shirt-logo">
-                
-                <div class="box-content">
-                    <h1 class="product-name">Fun-T-Hoodie</h1>
-                    <div class="box-text">
-                        <a href="#" class="product-price">$12</a>
-                        <h2 class="description">Lorem Ipsum is <br>simply dummy text</h2>
-                    </div>
-                    <button class="car-btn">Buy Now</button>
-                </div>
-
-            </div>
-
-            <div class="product-box">
-                <img src="assets/images/T-Shirts-Box1_.png" width="350px" height="150px" class="t-shirt-logo">
-                
-                <div class="box-content">
-                    <h1 class="product-name">Fun-T-Hoodie</h1>
-                    <div class="box-text">
-                        <a href="#" class="product-price">$12</a>
-                        <h2 class="description">Lorem Ipsum is <br>simply dummy text</h2>
-                    </div>
-                    <button class="car-btn">Buy Now</button>
-                </div>
-
-            </div>
-
-            <div class="product-box">
-                <img src="assets/images/T-Shirts-Box1_.png" width="300px" height="100px" class="t-shirt-logo">
-                
-                <div class="box-content">
-                    <h1 class="product-name">Fun-T-Hoodie</h1>
-                    <div class="box-text">
-                        <a href="#" class="product-price">$12</a>
-                        <h2 class="description">Lorem Ipsum is <br>simply dummy text</h2>
-                    </div>
-                    <button class="car-btn">Buy Now</button>
-                </div>
-
-            </div>
-
-            <div class="product-box">
-                <img src="assets/images/T-Shirts-Box1_.png" width="350px" height="150px" class="t-shirt-logo">
-                
-                <div class="box-content">
-                    <h1 class="product-name">Fun-T-Hoodie</h1>
-                    <div class="box-text">
-                        <a href="#" class="product-price">$12</a>
-                        <h2 class="description">Lorem Ipsum is <br>simply dummy text</h2>
-                    </div>
-                    <button class="car-btn">Buy Now</button>
-                </div>
-
-            </div>
-
-            <div class="product-box">
-                <img src="assets/images/T-Shirts-Box1_.png" width="300px" height="100px" class="t-shirt-logo">
-                
-                <div class="box-content">
-                    <h1 class="product-name">Fun-T-Hoodie</h1>
-                    <div class="box-text">
-                        <a href="#" class="product-price">$12</a>
-                        <h2 class="description">Lorem Ipsum is <br>simply dummy text</h2>
-                    </div>
-                    <button class="car-btn">Buy Now</button>
-                </div>
-
-            </div>
-
+    <!--- products-next-section -->
+    <section class="second-product-container" id="products-next">
+        <div class="products-next-content">
 
         </div>
     </section>
-     main-ends -->
 
 
-    <!--- products-section 
-    <section class="second-product-container" id="product-II">
+    <!--- services-section -->
+    <section class="service-section" id="service">
+        <div class="service-content">
 
+        </div>
+
+
+        <!--- popup-section -->
+        <div class="main-popup-window" id="popup-window">
+            <div class="popup-content">
+
+            </div>
+        </div>
+
+
+        <!--- cart-section -->
+        <div class="cart-popup-window" id="cart-window">
+            <div class="cart-content">
+
+            </div>
+        </div>
     </section>
--->
+    <!--- main-ends -->
 
 
-    <!--- footer 
-    <footer class="footer-bottom" id="footer">
+    <!--- footer-section -->
+    <section class="footer-bottom" id="footer">
         <p class="copyright">
             &copy; 2023 Website. All Rights Reserved | <a href="https://eeroinc.io/" target="_blank" class="link"> Σero
                 Technologies Inc.</a>
         </p>
-    </footer> -->
+    </section>
 
 
     <!--- js links -->
